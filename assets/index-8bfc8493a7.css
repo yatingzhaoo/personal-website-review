@@ -3,3 +3,5 @@
 
 
 :root{--secondary:#5f6163}.bio,.project-copy p,.compact-project .project-copy p,.mardo-intro p{color:#484a4c}.prose p,.latest-thought .thought-excerpt{color:#292a2b}
+
+:root{--secondary:#4e5052;--secondary-weight:450}.bio,.project-copy p,.compact-project .project-copy p,.mardo-intro p{color:#303133;font-weight:500}.prose p,.latest-thought .thought-excerpt,.case-original-paragraph{color:#191a1b;font-weight:500}
