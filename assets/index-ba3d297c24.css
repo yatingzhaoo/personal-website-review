@@ -5,3 +5,15 @@
 :root{--secondary:#5f6163}.bio,.project-copy p,.compact-project .project-copy p,.mardo-intro p{color:#484a4c}.prose p,.latest-thought .thought-excerpt{color:#292a2b}
 
 :root{--secondary:#4e5052;--secondary-weight:450}.bio,.project-copy p,.compact-project .project-copy p,.mardo-intro p{color:#303133;font-weight:500}.prose p,.latest-thought .thought-excerpt,.case-original-paragraph{color:#191a1b;font-weight:500}
+
+/* Mobile homepage alignment */
+@media (max-width: 760px) {
+  .bento { text-align: center; }
+  .bento .mardo-intro { flex-direction: column; padding-inline: 28px; gap: 12px; }
+  .bento .project-heading { justify-content: center; }
+  .bento .project-identity { justify-content: center; }
+  .compact-project .project-copy { flex: 0 1 auto; }
+  .latest-thought { align-items: center; }
+  .travel-photo-caption { text-align: center; }
+  .contacts { justify-content: center; }
+}
