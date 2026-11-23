@@ -7,3 +7,19 @@
 :root{--secondary:#4e5052;--secondary-weight:450}.bio,.project-copy p,.compact-project .project-copy p,.mardo-intro p{color:#303133;font-weight:500}.prose p,.latest-thought .thought-excerpt,.case-original-paragraph{color:#191a1b;font-weight:500}
 
 @media (max-width:760px){.contacts{justify-content:center}}
+
+/* Reading affordances */
+.latest-thought .archive::after,
+.entry-actions > button[aria-expanded]::after,
+.entry-actions > a:not(.out-link)::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 8px;
+  margin-inline-start: 6px;
+  vertical-align: 1px;
+  background: currentColor;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.entry-actions > button[aria-expanded="false"]::after { transform: rotate(90deg); }
+.entry-actions > button[aria-expanded="true"]::after { transform: rotate(-90deg); }
