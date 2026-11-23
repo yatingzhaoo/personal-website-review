@@ -23,3 +23,5 @@
 }
 .entry-actions > button[aria-expanded="false"]::after { transform: rotate(90deg); }
 .entry-actions > button[aria-expanded="true"]::after { transform: rotate(-90deg); }
+
+.case-original-paragraph{font-weight:400}.case-comparison-pair span{text-align:center}
