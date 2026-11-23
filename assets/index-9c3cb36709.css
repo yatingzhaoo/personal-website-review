@@ -14,14 +14,25 @@
 .entry-actions > a:not(.out-link)::after {
   content: "";
   display: inline-block;
-  width: 7px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   margin-inline-start: 6px;
   vertical-align: 1px;
   background: currentColor;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 1.5 10 6 3 10.5Z' fill='none' stroke='black' stroke-width='1.4' stroke-linejoin='round'/%3E%3C/svg%3E") center / contain no-repeat;
 }
 .entry-actions > button[aria-expanded="false"]::after { transform: rotate(90deg); }
 .entry-actions > button[aria-expanded="true"]::after { transform: rotate(-90deg); }
+.latest-thought, .card.entry { position: relative; }
+.latest-thought .archive::before,
+.entry-actions > button[aria-expanded="false"]::before,
+.entry-actions > a:not(.out-link)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  cursor: pointer;
+}
+
 
 .case-original-paragraph{font-weight:400}.case-comparison-pair span{text-align:center}
